@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>랜덤 숫자 발생기!!</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>랜덤 숫자 발생기!!</h1>
+      <p>숫자 길이 설정</p>
+      <input id="input" v-model="message"></input>
+      <button id="btn" @click="generate">생성</button>
+      <hr align="center">
+      <span v-for="number in numbers">{{ number }}</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
